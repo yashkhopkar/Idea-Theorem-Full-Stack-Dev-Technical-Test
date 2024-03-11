@@ -227,7 +227,8 @@ const RegistrationForm = () => {
               {...register('password', {
                 required: 'Password is required',
                 pattern: {
-                  value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/,
+                  value:
+                    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*]{8,}$/,
                   message:
                     'Password must contain 8 characters, at least one uppercase letter, one lowercase letter, and one number',
                 },
